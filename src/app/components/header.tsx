@@ -1,7 +1,8 @@
 import Image from "next/image"
 import BoardsBg from '../../../public/boards-head.jpg'
 import Waves from '../../../public/waves.png'
-import { GiShoppingCart } from "react-icons/gi";
+import { GiWaveSurfer } from "react-icons/gi";
+import { MdShoppingCart } from "react-icons/md";
 
 export default function Header({}){
   return (
@@ -22,10 +23,14 @@ export default function Header({}){
           className="w-10 h-10 m-2 mx-4"
         />
         <h1 className="font-Knewave text-3xl text-white drop-shadow-[0_6px_8px_rgba(47,148,181,1.0)]">Welcome to AllBoards!</h1>
-        <button className="mr-4 text-white">
-          <span className="absolute w-fit h-fit px-1 ml-2 text-xs  bg-red-500 z-10 rounded">5</span>
-          <p className="z-0 text-3xl font-bold drop-shadow-[0_6px_6px_rgba(47,148,181,1.0)]"><GiShoppingCart /></p>
-        </button>
+        <div className="flex flex-row">
+          <button className="z-0 mr-4 text-white text-3xl font-bold drop-shadow-[0_6px_6px_rgba(47,148,181,1.0)]"><GiWaveSurfer /></button>
+          <button className="mr-4 text-white">
+            <span className="absolute w-fit h-fit px-1 ml-2 text-xs  bg-red-500 z-10 rounded">5</span>
+            <p className="z-0 text-3xl font-bold drop-shadow-[0_6px_6px_rgba(47,148,181,1.0)]"><MdShoppingCart /></p>
+          </button>
+        </div>
+        
       </div>
     </nav>
   )
