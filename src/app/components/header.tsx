@@ -20,7 +20,7 @@ export default function Header({}){
           alt="wave logo"
           className="w-32 h-32 m-2 ml-4"
         />
-        <h1 className="font-Knewave text-4xl text-white drop-shadow-[0_6px_8px_rgba(47,148,181,1.0)]">Welcome to AllBoards!</h1>
+        <h1 className="font-Knewave text-4xl text-white drop-shadow-[0_6px_8px_rgba(47,148,181,1.0)] mr-4">Welcome to AllBoards!</h1>
       </div>
     </nav>
   )
