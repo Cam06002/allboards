@@ -1,6 +1,7 @@
 import Image from "next/image"
 import BoardsBg from '../../../public/boards-head.jpg'
 import Waves from '../../../public/waves.png'
+import { GiShoppingCart } from "react-icons/gi";
 
 export default function Header({}){
   return (
@@ -13,14 +14,18 @@ export default function Header({}){
           className="object-center object-cover w-full h-full opacity-50"
         />
       </div>
-      <div className="bg-blue-200/80 h-full flex flex-row items-center">
+      <div className="bg-blue-200/85 h-full flex flex-row items-center justify-between">
         <Image
           src={Waves}
           quality={100}
           alt="wave logo"
-          className="w-32 h-32 m-2 ml-4"
+          className="w-10 h-10 m-2 mx-4"
         />
-        <h1 className="font-Knewave text-4xl text-white drop-shadow-[0_6px_8px_rgba(47,148,181,1.0)] mr-4">Welcome to AllBoards!</h1>
+        <h1 className="font-Knewave text-3xl text-white drop-shadow-[0_6px_8px_rgba(47,148,181,1.0)]">Welcome to AllBoards!</h1>
+        <button className="mr-4 text-white">
+          <span className="absolute w-fit h-fit px-1 ml-2 text-xs  bg-red-500 z-10 rounded">5</span>
+          <p className="z-0 text-3xl font-bold drop-shadow-[0_6px_6px_rgba(47,148,181,1.0)]"><GiShoppingCart /></p>
+        </button>
       </div>
     </nav>
   )
