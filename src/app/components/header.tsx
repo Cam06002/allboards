@@ -24,13 +24,16 @@ export default function Header({}){
         />
         <h1 className="font-Knewave text-3xl text-white drop-shadow-[0_6px_8px_rgba(47,148,181,1.0)]">Welcome to AllBoards!</h1>
         <div className="flex flex-row">
-          <button className="z-0 mr-4 text-white text-3xl font-bold drop-shadow-[0_6px_6px_rgba(47,148,181,1.0)]"><GiWaveSurfer /></button>
+          
+          <button className="z-0 mr-4 text-white text-3xl font-bold drop-shadow-[0_6px_6px_rgba(47,148,181,1.0)]">
+            <GiWaveSurfer />
+          </button>
+          
           <button className="mr-4 text-white">
             <span className="absolute w-fit h-fit px-1 ml-2 text-xs  bg-red-500 z-10 rounded">5</span>
             <p className="z-0 text-3xl font-bold drop-shadow-[0_6px_6px_rgba(47,148,181,1.0)]"><MdShoppingCart /></p>
           </button>
         </div>
-        
       </div>
     </nav>
   )

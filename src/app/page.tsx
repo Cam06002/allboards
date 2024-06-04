@@ -40,7 +40,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col p-10">
       <div className="z-10 w-full max-w-5xl justify-center font-mono flex flex-col align-top mb-10">
         <div className='w-full flex justify-center'>
-          <h1 className="font-Knewave text-2xl mb-10 bg-yellow-100 flex w-fit justify-self-center">Show Your Stylye With Custom-Wrapped Surfboards</h1>
+          <h1 className="font-Knewave text-2xl mb-10 bg-yellow-100 flex w-full justify-self-center">Show Your Stylye With Custom-Wrapped Surfboards</h1>
         </div>
         <div className="flex flex-col align-middle items-center justify-center">
           <h3 className="font-Knewave text-lg">Step 1 - Choose Your Design</h3>
